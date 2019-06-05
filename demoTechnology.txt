@@ -1,0 +1,2 @@
+﻿vue+vuex+elementUi+axios+localStorange
+运行node server.js 则启动一个本地接口 axios即可调用
