@@ -14,21 +14,20 @@ import { mapGetters, mapActions } from "vuex";
 export default {
     data() {
         return {
-            // hide: true
+
         }
     },
     created() {
-        
             console.log(this.loading)
-
     },
     computed: {
-        ...mapGetters(["loading", "showToast", "showAlert"]),
+        ...mapGetters(["loading"])
        
     },
     methods: {
         ...mapActions({ setNavState: "setNavState" }),
         foo() {
+            sessionStorage.setItem("loading","true")
             this.setNavState(false);
         },
         // foo() {

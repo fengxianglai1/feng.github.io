@@ -59,7 +59,7 @@ export default {
   created: async function() { 
 
    
-    var d= await this.http.get("http://www.dazhu666.com/api/front/content/getPositionCategory?modelItemId=298");
+   await this.http.get("http://www.dazhu666.com/api/front/content/getPositionCategory?modelItemId=298");
 
 
   },
